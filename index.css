@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+  
+  body {
+    background: #eee;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    flex-direction: column; }
+
+    .main{
+      display: flex;
+      flex-direction: column;
+      flex-basis: 256px;
+  }
+      
+  ul li a{
+    text-decoration: none;
+    display: flex
+   
+  }
+
+ul li {
+    list-style: none;
+    margin-bottom: 10px;
+    flex: 0 0 3rem; }
+
+  header, footer { flex: none;
+  }
+
+  
+  .categories nav{
+   display: flex;
+  
+    text-decoration: none;
+    font-family: 'Dosis';
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    background-color: #44b;
+    color: white; }
+
+    a:hover {
+        background-color: yellow;
+        box-shadow: 0 2px 5px --2px;
+      }
+
+  footer{
+    display: flex;
+      background-color: #225;
+      padding: 18px;
+      font-family: dosis;
+      font-size: smaller;
+      letter-spacing: 1px;
+      justify-content: center;}
+
+
+section h2{
+    text-decoration: underline;   
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 1px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin: 10px;
+margin-bottom: 12px;
+margin-right: 12px;
+border: 1px solid;
+padding: 10px;
+box-shadow: 5px 10px #888888;
+}
+
+.items{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: inherit 'open sans';
+  align-items: flex-start;
+  flex-grow: 1;
+}
+.item-name{ 
+  background-color: rgb(126, 126, 235);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 20;}
+
+.fact-line{
+  background-color: rgb(132, 132, 219);
+  color: white;}
+
+.add-item{
+  background-color: #225;
+  color: pink ;
+  border-radius: 50%;
+}
+
+.item-description{
+  background-color: gray;
+  color: pink ;
+}
+
+.main-nav{
+  display: flex;
+  background-color: #225;
+  justify-content: space-between;  
+}
+
+.full-width{
+  display: none;
+}
+.short-width{
+  display: flex;
+}
+
+.nav-list{
+  li: last-of-type;
+display: flex;}
+
+.company-name{
+    color: rgb(68, 68, 179);
+    font-family: monospace;
+    font-size: 30px;
+  }
+
+.credit-offer{
+  background-color: red;
+  color: white;
+}
+
+@media screen and (max-width:768px){
+  .item{ flex-basis: 100%; flex-direction: column;}
+}
